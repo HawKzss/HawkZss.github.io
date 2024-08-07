@@ -1,0 +1,134 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #000000, #000080, #0000FF, #00FFFF, #FFFFFF);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+    border: 2px color(srgb rgb(184, 194, 209) green blue);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.home{
+    border: #000000 3px;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black for contrast */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+nav li:hover .dropdown {
+    display: block;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 7px;
+    padding: 5px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-section {
+    padding: 20px;
+}
+
+.gallery {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.image-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.image-container img:first-child {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+#contact {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media li {
+    display: inline-block;
+    margin: 0 10px;
+}
+header img{
+    height: 30%;
+    width: 30%;
+}
