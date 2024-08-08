@@ -5,10 +5,10 @@ body {
     background: linear-gradient(to right, #000000, #000080, #0000FF, #00FFFF, #FFFFFF);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    width: 60%;
+    width: 80%
     margin-right: 20%;
     margin-left: 20%;
-    border: 2px color(srgb rgb(184, 194, 209) green blue);
+    border: black 2px);
 }
 
 @keyframes gradient {
