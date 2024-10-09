@@ -72,7 +72,7 @@ nav li:hover .dropdown {
 
 .gallery {
     position: relative;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -82,10 +82,14 @@ nav li:hover .dropdown {
 }
 
 .image-container img {
-    width: 100%;
-    height: auto;
-    display: none;
+  max-width: 100%; /* Ensure images never exceed the container width */
+  height: auto; /* Maintain aspect ratio */
 }
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  img {
+    max-width: 100%; /* Make images fill the entire width on smaller screens */
+  }
 
 .image-container img:first-child {
     display: block;
